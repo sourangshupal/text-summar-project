@@ -32,3 +32,10 @@ checkpoints/
 
 # macOS
 .DS_Store
+
+
+CLAUDE.md
+flan_t5_project_plan.md
+main.py
+tests/*
+uv.lock

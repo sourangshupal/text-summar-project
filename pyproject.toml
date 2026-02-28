@@ -20,6 +20,8 @@ dependencies = [
     "pydantic>=2.12.5",
     # Observability
     "weave>=0.52.28",
+    "jupyter>=1.1.1",
+    "matplotlib>=3.10.8",
 ]
 
 [project.optional-dependencies]

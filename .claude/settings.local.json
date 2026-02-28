@@ -1,7 +1,15 @@
 {
   "permissions": {
     "allow": [
-      "Bash(uv run:*)"
+      "Bash(uv run:*)",
+      "Bash(git check-ignore:*)",
+      "Bash(python:*)",
+      "Bash(pip show:*)",
+      "Bash(done)",
+      "Bash(git merge:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git:*)"
     ]
   }
 }
