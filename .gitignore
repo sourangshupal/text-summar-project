@@ -11,3 +11,24 @@ wheels/
 
 # Git worktrees
 .worktrees/
+
+# Environment / secrets
+.env
+.env.*
+
+# Training artifacts
+results/
+*.pt
+*.bin
+*.safetensors
+checkpoints/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# UV lock (kept — should be committed)
+# uv.lock  ← do NOT add this line; lock file must be committed
+
+# macOS
+.DS_Store
