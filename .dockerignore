@@ -1,0 +1,37 @@
+# Virtual environments — Docker builds its own via uv sync
+.venv/
+
+# Git metadata
+.git/
+.worktrees/
+
+# Development & editor tooling
+.github/
+.claude/
+.python-version
+
+# Documentation & design
+notebooks/
+training/
+design_workflows/
+*.md
+
+# Secrets — must never be baked into an image
+.env
+.env.example
+
+# Legacy dependency files (Dockerfile uses uv/pyproject.toml)
+requirements.txt
+
+# Python bytecode — platform-specific, rebuilt in container
+__pycache__/
+*.py[cod]
+
+# Jupyter cache
+.ipynb_checkpoints/
+
+# macOS metadata
+.DS_Store
+
+# The Dockerfile itself is not needed inside the image
+inference/Dockerfile

@@ -14,7 +14,6 @@ wheels/
 
 # Environment / secrets
 .env
-.env.*
 
 # Training artifacts
 results/
@@ -27,8 +26,8 @@ checkpoints/
 .ipynb_checkpoints/
 *.ipynb_checkpoints
 
-# UV lock (kept — should be committed)
-# uv.lock  ← do NOT add this line; lock file must be committed
+# UV lock — intentionally committed; required by `uv sync --frozen` in CI and Docker
+# uv.lock  ← do NOT add this line; the lock file must be committed
 
 # macOS
 .DS_Store
@@ -38,4 +37,5 @@ CLAUDE.md
 flan_t5_project_plan.md
 main.py
 tests/*
+
 uv.lock

@@ -9,7 +9,18 @@
       "Bash(git merge:*)",
       "Bash(git add:*)",
       "Bash(git commit:*)",
-      "Bash(git:*)"
+      "Bash(git:*)",
+      "Bash(curl:*)",
+      "Bash(lsof:*)",
+      "Bash(python3:*)",
+      "Bash(.venv/bin/python:*)",
+      "Bash(PYTORCH_MPS_HIGH_WATERMARK_RATIO=0.0 .venv/bin/python:*)",
+      "Bash(sw_vers:*)",
+      "Bash(/tmp/test_mps.py:*)",
+      "Bash(/tmp/test_step.py:*)",
+      "Bash(/tmp/test_mps_inference.py:*)",
+      "Bash(ls:*)",
+      "Bash(test:*)"
     ]
   }
 }
