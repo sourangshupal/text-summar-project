@@ -6,6 +6,7 @@ on:
     paths:
       - "inference/**"
       - "inference/Dockerfile"
+      - "inference/Dockerfile.cpu"
       - "pyproject.toml"
       - "uv.lock"
 
@@ -43,7 +44,7 @@ jobs:
             -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG \
             -t $ECR_REGISTRY/$ECR_REPOSITORY:latest \
             --push \
-            -f inference/Dockerfile .
+            -f inference/Dockerfile.cpu .
 
       - name: Deploy to App Runner
         run: |

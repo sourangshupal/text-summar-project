@@ -47,3 +47,4 @@ async def summarize(request: SummarizeRequest):
 
 
 print("Flan-T5 Summarizer API is ready!")
+print("Flan-T5 Summarizer API is ready!")
