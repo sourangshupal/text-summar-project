@@ -120,6 +120,10 @@ docker buildx build \
   -f inference/Dockerfile .
 ```
 
+```bash
+docker buildx build --platform linux/amd64 -f inference/Dockerfile.cpu -t flan-t5-cpu:test .
+```
+
 > ⚠️ The `--platform linux/amd64` flag is required — AWS App Runner runs on x86 hardware. Building on Apple Silicon without this flag produces an image that will fail to start on App Runner.
 
 ### Run the container locally
