@@ -4,7 +4,7 @@
 # Target runtime : AWS App Runner (linux/amd64)
 # Build          : docker buildx build --platform linux/amd64 -f inference/Dockerfile .
 # ──────────────────────────────────────────────────────────────────────────────
-FROM --platform=linux/amd64 python:3.12-slim
+FROM python:3.12-slim
 
 # Pin uv for reproducible builds — bump this tag when upgrading uv
 COPY --from=ghcr.io/astral-sh/uv:0.5.26 /uv /uvx /usr/local/bin/

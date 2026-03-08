@@ -20,7 +20,12 @@
       "Bash(/tmp/test_step.py:*)",
       "Bash(/tmp/test_mps_inference.py:*)",
       "Bash(ls:*)",
-      "Bash(test:*)"
+      "Bash(test:*)",
+      "WebFetch(domain:hub.docker.com)",
+      "WebFetch(domain:download.pytorch.org)",
+      "WebFetch(domain:github.com)",
+      "WebSearch",
+      "WebFetch(domain:docs.astral.sh)"
     ]
   }
 }

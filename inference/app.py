@@ -1,7 +1,9 @@
 """FastAPI inference API for Flan-T5 summarization."""
 
+import os
 from contextlib import asynccontextmanager
 
+import weave
 from fastapi import FastAPI
 from pydantic import BaseModel, ConfigDict
 
@@ -23,6 +25,8 @@ class SummarizeResponse(BaseModel):
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     """Load the model once at startup; release on shutdown."""
+    project = os.environ.get("WANDB_PROJECT", "flan-t5-summarizer")
+    weave.init(project_name=project)
     app.state.model = load_model()
     yield
 
