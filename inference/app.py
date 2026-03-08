@@ -44,3 +44,6 @@ async def summarize(request: SummarizeRequest):
     summary = predict(request.text, max_new_tokens=request.max_length)
     log_inference(query=request.text, response=summary)
     return SummarizeResponse(summary=summary)
+
+
+print("Flan-T5 Summarizer API is ready!")
