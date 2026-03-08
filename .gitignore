@@ -38,4 +38,4 @@ flan_t5_project_plan.md
 main.py
 tests/*
 
-uv.lock
+#uv.lock
